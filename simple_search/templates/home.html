@@ -1,0 +1,7 @@
+{% extends "layout.html" %} {% block content %}
+    <form method="get">
+        <input type="text" name="q">
+        <input type="submit" value="FindMe" formaction="/simplesearch">
+        <input type="submit" value="I'm Feeling Lucky!" formaction="/searching">
+    </form>
+{% endblock %}

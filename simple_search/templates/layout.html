@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">FindMe</a></li>
+            <li><a href="/imageSearch">Image Search</a></li>
+            <li><a href="/advanceSearch">Advanced Search</a></li>
+        </ul>
+    </nav>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <footer>
+        <div>
+            <ul>
+                <li>About FindMe</li>
+                <li>Adds</li>
+                <li>Bussisnes</li>
+                <li>How does Google work?</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Privacy</li>
+                <li>Conditions</li>
+                <li>Preferences</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

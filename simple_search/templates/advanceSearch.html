@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!--more information in https://stackoverflow.com/questions/15852238/how-to-construct-complex-google-web-search-query-->
+    <form action="https://www.google.com/search" method="GET">
+        <h2>Display pages that contain</h2>
+        <div>
+            <label for="q">All these words</label>
+            <input type="text" name="q">
+        </div>
+        <div>
+            <label for="as_epq">these exact words or phrases</label>
+            <input type="text" name="as_epq">
+        </div>
+        <div>
+            <label for="as_oq">Any of these words</label>
+            <input type="text" name="as_oq">
+        </div>
+        <div>
+            <label for="as_eq">None of these words</label>
+            <input type="text" name="as_eq">
+        </div>
+        <!--This input I added because I want a search more specific like google-->
+        <div>
+            <div>
+                <label for="as_nlo">Number from</label>
+                <input type="text" name="as_nlo">to
+                <input type="text" name="as_nhi">
+            </div>
+        </div>
+        <input type="submit" value="Búsqueda Avanzada">
+    </form>
+{% endblock %}
